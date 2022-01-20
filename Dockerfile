@@ -15,6 +15,6 @@ RUN npm install -g json-server \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-ADD run.sh default.json /
+ADD run.sh db.json /
 ENTRYPOINT ["bash", "/run.sh"]
 CMD []
