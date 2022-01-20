@@ -11,7 +11,7 @@ fi
 if [ ! -z "$FILE" ]; then
         SERVER_ARGS="$SERVER_ARGS --watch $FILE"
 else
-        SERVER_ARGS="$SERVER_ARGS --watch /default.json"
+        SERVER_ARGS="$SERVER_ARGS --watch /db.json"
 fi
 
 sh -c "json-server $SERVER_ARGS"
